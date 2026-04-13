@@ -1,0 +1,18 @@
+flowchart TD
+    A["UserProfile<br/>preferred_genre, preferred_mood<br/>preferred_energy, preferred_valence<br/>preferred_tempo_bpm, preferred_danceability, preferred_acousticness"]
+    B["data/songs.csv<br/>load_songs()"]
+
+    A --> LOOP
+    B --> LOOP
+
+    subgraph LOOP["Score Each Song in the Catalog"]
+        C["Take one Song<br/>title, artist, genre, mood<br/>energy, valence, tempo_bpm, danceability, acousticness"]
+        C --> D["Categorical Scoring<br/>genre match: 1 or 0<br/>mood match: 1 or 0"]
+        C --> E["Numeric Scoring<br/>score = 1 - abs(user_pref - song_value)<br/>applied to: energy, valence, tempo_bpm,<br/>danceability, acousticness"]
+        D --> F["Weighted Sum<br/>mood*0.25 + energy*0.20 + valence*0.20<br/>+ genre*0.15 + acousticness*0.10<br/>+ tempo*0.05 + danceability*0.05<br/>= total_score (0 to 1)"]
+        E --> F
+    end
+
+    LOOP --> G["Collect all song + total_score pairs"]
+    G --> H["Sort descending by total_score"]
+    H --> I["Return Top K Songs as Recommendations"]

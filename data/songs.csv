@@ -9,3 +9,11 @@ id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness
 8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22
 9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78
 10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35
+11,Run the Block,DriveMode,hip-hop,confident,0.78,95,0.72,0.85,0.08
+12,Moonlit Sonata,Clara Voss,classical,melancholic,0.25,58,0.30,0.22,0.95
+13,Break the Walls,IronForge,metal,angry,0.97,168,0.35,0.52,0.03
+14,Old Road Home,The Pines,folk,nostalgic,0.33,84,0.45,0.40,0.88
+15,Island Time,Coco Wave,reggae,uplifting,0.61,88,0.80,0.76,0.42
+16,Velvet Hours,Sienna Rae,r&b,romantic,0.55,92,0.68,0.71,0.30
+17,Pulse Drop,Circuit 9,edm,euphoric,0.95,140,0.88,0.94,0.02
+18,Broken Neon Sign,Dusty Ray,blues,melancholic,0.44,76,0.28,0.48,0.65

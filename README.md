@@ -119,20 +119,6 @@ uv run pytest
 
 ---
 
-## Limitations and Risks
-
-Summarize some limitations of your recommender.
-
-Examples:
-
-- It only works on a tiny catalog
-- It does not understand lyrics or language
-- It might over favor one genre or mood
-
-You will go deeper on this in your model card.
-
----
-
 ## Personal Reflection
 
 One of my biggest learning moments in this project was understanding how recommender systems turn simple input data into meaningful predictions. Even with a relatively straightforward scoring approach, I was able to see how user preferences can be translated into numerical values and compared against item features to produce ranked recommendations. It made me realize that recommendation systems don’t always need complex models to be effective—what matters is how well the logic aligns with the user’s intent.

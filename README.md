@@ -10,7 +10,7 @@ The system assigns a score to each song based on these preferences and returns a
 
 ## Sample Output
 
-![Sample Output](images/Sample.png)
+![Sample Output](images/Sample_1.png)
 
 ---
 
@@ -75,7 +75,7 @@ The user profile is static. The system never learns that a recommended song was 
 2. Run the app:
 
    ```bash
-   uv run python -m src.main
+   uv run python src/main.py
    ```
 
 ### Running Tests
